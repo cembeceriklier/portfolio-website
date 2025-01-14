@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { HOME_CONTENT } from '../constants';
+import { project_image } from '../../public/project_xox.png';
 
 const Projects = () => {
     const [isDetail, setIsDetail] = useState(true);
     const [projectView, setProjectView] = useState(0);
     const currentProjectContent = HOME_CONTENT.PROJECTS.ProjectsContent[projectView];
-    console.log(currentProjectContent.icons)
 
     useEffect(() => {
         setIsDetail(true);
@@ -52,7 +52,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                                 <div className="detail-right">
-                                    <img className='project-image' src='../public/project_xox.png' alt='project1' />
+                                    <img className='project-image' src={project_image} alt='project1' />
                                 </div>
                             </div>
                         )}
@@ -68,7 +68,7 @@ const Projects = () => {
                             </p>
                         </div>
                         <div className='project-image'>
-                            <img src='../public/project_xox.png' alt='project1' />
+                            <img src={project_image} alt='project1' />
                         </div>
                     </div>
                 </div>
