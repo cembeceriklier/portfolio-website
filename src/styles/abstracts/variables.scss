@@ -1,0 +1,94 @@
+// // Sass Variables
+$font-stack: 'Quicksand', sans-serif;
+// // $font-stack-2: 'Lato', Lato;
+// $primary-color: #ffffff;
+// $secondary-color: #000000;
+
+// // CSS Variables
+[theme='dark'] {
+    --background-color: rgb(22, 22, 22);
+    --text-color: rgb(241, 241, 241);
+    --text-hover: rgb(206, 206, 206);
+
+    --header-link: rgb(206, 206, 206);
+    --hamburger-menu-text-hover: rgb(206, 206, 206);
+    
+    --header-bg: rgb(85, 85, 85);
+    --header-text: rgb(241, 241, 241);
+    --header-text-b: rgb(177, 177, 177);
+    --header-text-c: rgb(241, 241, 241);
+    --reverse-color: rgb(49, 49, 49);
+
+    --cookie-text-color: rgb(26, 26, 26);
+
+    --mid-color-text: rgb(133, 133, 133);
+    --mid-color-bg: rgb(49, 49, 49); 
+
+    --project-background-detail: rgb(161, 161, 151);
+    --project-text-detail: rgb(241, 241, 241);
+    --project-background-info: rgb(49, 49, 49);
+    --project-text-info: rgb(230, 230, 230);
+    --hover: rgb(78, 78, 78);
+
+    --important: rgba(253, 252, 191, 0.363);
+    --important-text: rgb(252, 252, 252);
+
+    --skill-bar-background-color: rgb(90, 90, 90);
+
+    --picture-shadow-color: rgb(19, 19, 19);
+    --moon-color: rgba(22, 22, 22); 
+    --active-project-bg: rgb(121, 121, 121);
+
+    --contact-bg: rgb(49, 49, 49);
+}
+
+[theme='light'] {  
+    // GENERAL
+    --reverse-color: rgb(102, 102, 102);
+    --background-color: #E9E0D2;
+    --mid-color-text: rgb(54, 54, 54);
+    --text-color: rgb(0, 0, 0); 
+    --text-hover: rgb(78, 78, 78);
+    --mid-color-bg: rgb(185, 185, 185);
+    --important: rgb(255, 255, 255);
+    --important-text: rgb(0, 0, 0);
+    --cookie-text-color: rgb(128, 128, 128);
+
+    // HEADER
+    --header-bg: rgb(41, 41, 41);
+    --header-text: rgb(241, 241, 241);
+    --header-text-b: rgb(177, 177, 177);
+    --header-text-c: rgb(124, 124, 124);
+
+    // HAMBURGER MENU
+    --hamburger-menu-text-hover: rgb(206, 206, 206);
+    --hamburger-menu-text-active: rgb(206, 206, 206);
+    --hamburger-menu-text: rgb(233, 233, 233);
+
+    // PROJECTS
+    --active-project-bg: rgb(194, 194, 194);
+    --project-background-detail: rgb(161, 161, 151);
+    --project-text-detail: rgb(241, 241, 241);
+    --project-background-info: rgb(36, 36, 36);
+    --project-text-info: rgb(241, 241, 241);
+
+    // SKILLS
+    --skill-bar-background-color: rgb(151, 151, 151);
+    --skill-bar-color: rgb(241, 241, 241);
+    --skill-bar-background-color: rgb(133, 133, 133);
+    --skill-bar-hover-background-color: rgb(90, 90, 90);
+    --skill-bar-text: rgb(241, 241, 241);
+    --skill-bar-hover-text: rgb(241, 241, 241);
+    --skill-detail-text: rgb(241, 241, 241);
+
+    --hover: rgb(78, 78, 78);
+
+    --picture-shadow-color: rgb(0, 0, 0);
+    --moon-color: rgb(240, 240, 240, 1);
+}
+
+[animation='themeAnimation'] {
+    
+    --transform: background-color 0.5s ease, color 0.5s ease, fill 0.5s ease;
+}
+

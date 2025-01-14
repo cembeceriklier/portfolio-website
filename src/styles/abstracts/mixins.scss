@@ -1,0 +1,25 @@
+// Theme
+@mixin defaultTheme {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    fill: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease, fill 0.5s ease;
+}
+
+@mixin animation {
+    transition: var(--transform)
+}
+
+@mixin fadeDown {
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

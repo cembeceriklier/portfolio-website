@@ -1,0 +1,23 @@
+// abstracts
+@import './abstracts/variables.scss';
+@import './abstracts/mixins.scss';
+
+// base
+@import './base/reset.scss';
+@import './base/typography.scss';
+
+// components
+@import './components/header.scss';
+@import './components/about.scss';
+@import './components/personalInfo.scss';
+@import './components/profile.scss';
+@import './components/skills.scss';
+@import './components/social.scss';
+@import './components/stage.scss';
+@import './components/projects.scss';
+@import './components/contacts.scss';
+
+// pages
+@import './pages/home.scss';
+@import './pages/about.scss';
+@import './pages/blog.scss';

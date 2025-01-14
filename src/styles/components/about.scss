@@ -1,0 +1,23 @@
+// COMPONENT ABOUT
+
+.about {
+    position: sticky;
+    top: 50px;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 34px;
+
+    .hero-name {
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+
+    .small-text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .paragraph {}
+}

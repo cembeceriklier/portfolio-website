@@ -1,0 +1,21 @@
+.contact-section {
+    margin: 0px ;
+}
+
+.contact-container {
+    // margin-top: 4%;
+    background-color: var(--contact-bg);
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+
+    .contact {
+        width: 50%;
+
+    }
+    
+    .form {
+        width: 50%;
+    }
+}
+

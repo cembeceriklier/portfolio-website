@@ -1,0 +1,275 @@
+.projects-container {
+    position: sticky;
+    top: calc(17.5vh + 25px);
+    // margin: 100px 0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    .all_projects {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+
+        .project-list {
+            list-style-type: none;
+            width: 100%;
+            min-width: 160px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+
+            .projectName {
+                padding: 6px 0;
+                min-width: 200px;
+
+                span {
+                    padding: 2px 0;
+                    padding-right: 14px;
+                    padding-left: 20px;
+                }
+
+                &.active {
+                    background-color: var(--project-background-info);
+
+                    span {
+                        background: var(--background-color);
+                        border-radius: 0 5px 5px 0;
+                        overflow: hidden;
+                    }
+
+                    &:hover {}
+                }
+            }
+        }
+    }
+
+    .project-container {
+        position: relative;
+        width: 100%;
+        height: calc(65vh);
+        min-height: 400px;
+        box-shadow: 5px 5px 100px 1px var(--text-color);
+
+        background-color: var(--project-background-info);
+
+        .project-title-container {
+            position: absolute;
+            top: calc(50% - 50px);
+            left: 5%;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            z-index: 20;
+            transition: translate 0.6s ease-in-out;
+            mix-blend-mode: difference;
+
+            .project-name {
+                position: relative;
+                display: flex;
+                align-items: center;
+                left: 0%;
+                font-size: 35px;
+                font-weight: 700;
+                max-width: 200px;
+                color: white;
+                transition: left 0.8s ease-in-out;
+
+            }
+        }
+
+        .background {
+            position: absolute;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: var(--project-background-detail);
+            right: 0;
+            top: 0;
+            transition: width 0.7s ease-in;
+            z-index: 19;
+
+            .detail {
+                width: 100%;
+                height: 100%;
+                color: black;
+            }
+
+            .detail-button {
+                width: 25px;
+                margin-left: 6px;
+
+                .detail_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%;
+
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 95%;
+            height: 100%;
+            color: white;
+
+            .project-description {
+                display: flex;
+                align-items: end;
+                width: 50%;
+                padding-left: 5%;
+
+                p {
+                    font-family: $font-stack;
+                    font-size: 14px;
+                    color: var(--project-text-info);
+                    font-weight: 200;
+                    width: 100px;
+                    margin-bottom: 5%;
+                    height: 25%;
+                }
+            }
+
+            .project-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 100%;
+
+                img {
+                    height: 120%;
+                    filter: drop-shadow(50px 15px 130px rgba(0, 0, 0, 2));
+
+                }
+            }
+        }
+
+        &.detail {
+            .background {
+                min-width: 40px;
+                width: 5%;
+                max-width: 30px;
+            }
+
+            .project-name {
+                left: 0%;
+            }
+        }
+
+        &.info {
+            .background {
+                width: 100%;
+            }
+
+            .project-name {
+                left: 72%;
+            }
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.detail-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+
+}
+
+.detail-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    margin-left: 5%;
+    overflow: hidden;
+
+    img {
+        height: 120%;
+        transform: translateX(-120px);
+        filter: drop-shadow(50px 15px 130px rgba(0, 0, 0, 2));
+
+    }
+
+    &::before {
+        content: "";
+        // background-color: black;
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-backdrop-filter: blur(10px); 
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+    }
+}
+
+.detail-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    max-height: 400px;
+    width: 55%;
+    padding: 5%;
+    color: black;
+}
+
+.project-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    transform: rotate(180deg);
+
+}
+
+.project-icon {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(0px -2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.about-icons {
+    display: flex;
+    margin-top: 35px;
+    gap: 14px;
+    .icon {
+
+        width: 35px;
+        height: 35px;
+
+        svg {
+            fill: var(--text-color);
+        }
+    }
+}
