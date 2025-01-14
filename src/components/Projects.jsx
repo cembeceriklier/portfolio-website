@@ -52,7 +52,7 @@ const Projects = () => {
                                     </div>
                                 </div>
                                 <div className="detail-right">
-                                    <img className='project-image' src='../public/project1_img.png' alt='project1' />
+                                    <img className='project-image' src='../public/project_xox.png' alt='project1' />
                                 </div>
                             </div>
                         )}
@@ -68,7 +68,7 @@ const Projects = () => {
                             </p>
                         </div>
                         <div className='project-image'>
-                            <img src='../public/project1_img.png' alt='project1' />
+                            <img src='../public/project_xox.png' alt='project1' />
                         </div>
                     </div>
                 </div>
