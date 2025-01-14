@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HOME_CONTENT } from '../constants';
-import { project_image } from '../../public/project_xox.png';
+import project_image from '../../public/project_xox.png';
 
 const Projects = () => {
     const [isDetail, setIsDetail] = useState(true);
